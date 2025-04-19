@@ -1,0 +1,727 @@
+--[[
+ 		 _    _                  _    _     _     _ 
+ 		| |  | |                | |  (_)   | |   | |
+ 		| |__| | ___ _   _   ___| | ___  __| |___| |
+ 		|  __  |/ _ \ | | | / __| |/ / |/ _` / __| |
+ 		| |  | |  __/ |_| | \__ \   <| | (_| \__ |_|
+ 		|_|  |_|\___|\__  | |___/_|\_\_|\__,_|___(_)
+    		             __/ /                         
+       		            |___/                          
+		The following settings below are for YOU who want to just take my work and such.
+		Which I don't mind at all, so to make it easier for you, I took a small amount of 
+		time to make a customization menu for your use to edit this hub!
+		Just replace the values below with your own, and you're good to go!
+		(Make sure you don't mess up the formating, or it will break!)
+		
+		Much love ~BlockyDragonHead
+--]]
+local MainColor = Color3.fromRGB(112, 172, 244) --Replace the numbers with your own R,G,B value.
+local TitleName = "Elysian Hub V2" --Replace that with your own hub name.
+local IconID = "rbxassetid://91409821371966" --Replace "12470707498" with your own image id.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local SugmaBawls = Instance.new("ScreenGui")
+local Border = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local JumpPower = Instance.new("TextButton")
+local Flight = Instance.new("TextButton")
+local Spin = Instance.new("TextButton")
+local TP = Instance.new("TextButton")
+local Animatrix = Instance.new("TextButton")
+local Nameless = Instance.new("TextButton")
+local Yield = Instance.new("TextButton")
+local Chaos = Instance.new("TextButton")
+local Troll = Instance.new("TextButton")
+local Backdoor = Instance.new("TextButton")
+local Bypasser = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Air = Instance.new("TextButton")
+local Scripthub = Instance.new("TextButton")
+local Mon = Instance.new("TextButton")
+local UniESP = Instance.new("TextButton")
+local backdoorexe = Instance.new("TextButton")
+local Gay = Instance.new("TextButton")
+local Kick = Instance.new("TextButton")
+local Friend = Instance.new("TextButton")
+local menu = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Icon = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
+
+--Properties:
+
+SugmaBawls.Name = "SugmaBawls"
+SugmaBawls.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SugmaBawls.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Border.Name = "Border"
+Border.Parent = SugmaBawls
+Border.BackgroundColor3 = Color3.fromRGB(112, 172, 244)
+Border.BorderColor3 = MainColor
+Border.BorderSizePixel = 0
+Border.Position = UDim2.new(0.37426132, 0, 0.321608037, 0)
+Border.Size = UDim2.new(0, 571, 0, 352)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Border
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0129589075, 0, 0.0880681798, 0)
+MainFrame.Size = UDim2.new(0, 553, 0, 311)
+
+Speed.Name = "Speed"
+Speed.Parent = MainFrame
+Speed.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.0133333672, 0, 0.72861892, 0)
+Speed.Size = UDim2.new(0, 84, 0, 28)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 14.000
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = MainFrame
+JumpPower.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.BorderSizePixel = 0
+JumpPower.Position = UDim2.new(0.181458727, 0, 0.72861886, 0)
+JumpPower.Size = UDim2.new(0, 84, 0, 28)
+JumpPower.Font = Enum.Font.SourceSans
+JumpPower.Text = "Jump Power"
+JumpPower.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.TextSize = 14.000
+
+Flight.Name = "Flight"
+Flight.Parent = MainFrame
+Flight.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Flight.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Flight.BorderSizePixel = 0
+Flight.Position = UDim2.new(0.348603576, 0, 0.725403428, 0)
+Flight.Size = UDim2.new(0, 84, 0, 28)
+Flight.Font = Enum.Font.SourceSans
+Flight.Text = "Flight"
+Flight.TextColor3 = Color3.fromRGB(0, 0, 0)
+Flight.TextSize = 14.000
+
+Spin.Name = "Spin"
+Spin.Parent = MainFrame
+Spin.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Spin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spin.BorderSizePixel = 0
+Spin.Position = UDim2.new(0.523809552, 0, 0.725403428, 0)
+Spin.Size = UDim2.new(0, 84, 0, 28)
+Spin.Font = Enum.Font.SourceSans
+Spin.Text = "Spinner"
+Spin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spin.TextSize = 14.000
+
+TP.Name = "TP"
+TP.Parent = MainFrame
+TP.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+TP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TP.BorderSizePixel = 0
+TP.Position = UDim2.new(0.0133333672, 0, 0.60992533, 0)
+TP.Size = UDim2.new(0, 84, 0, 28)
+TP.Font = Enum.Font.SourceSans
+TP.Text = "Click To TP"
+TP.TextColor3 = Color3.fromRGB(0, 0, 0)
+TP.TextSize = 14.000
+
+Animatrix.Name = "Animatrix"
+Animatrix.Parent = MainFrame
+Animatrix.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Animatrix.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Animatrix.BorderSizePixel = 0
+Animatrix.Position = UDim2.new(0.181458727, 0, 0.60992527, 0)
+Animatrix.Size = UDim2.new(0, 84, 0, 28)
+Animatrix.Font = Enum.Font.SourceSans
+Animatrix.Text = "FE Animations"
+Animatrix.TextColor3 = Color3.fromRGB(0, 0, 0)
+Animatrix.TextSize = 14.000
+
+Nameless.Name = "Nameless"
+Nameless.Parent = MainFrame
+Nameless.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Nameless.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Nameless.BorderSizePixel = 0
+Nameless.Position = UDim2.new(0.348603576, 0, 0.606709838, 0)
+Nameless.Size = UDim2.new(0, 84, 0, 28)
+Nameless.Font = Enum.Font.SourceSans
+Nameless.Text = "Nameless Admin"
+Nameless.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nameless.TextSize = 14.000
+
+Yield.Name = "Yield"
+Yield.Parent = MainFrame
+Yield.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Yield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Yield.BorderSizePixel = 0
+Yield.Position = UDim2.new(0.523809552, 0, 0.606709838, 0)
+Yield.Size = UDim2.new(0, 84, 0, 28)
+Yield.Font = Enum.Font.SourceSans
+Yield.Text = "Infinite Yield"
+Yield.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yield.TextSize = 14.000
+
+Chaos.Name = "Chaos"
+Chaos.Parent = MainFrame
+Chaos.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Chaos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Chaos.BorderSizePixel = 0
+Chaos.Position = UDim2.new(0.0133333337, 0, 0.493562222, 0)
+Chaos.Size = UDim2.new(0, 84, 0, 28)
+Chaos.Font = Enum.Font.SourceSans
+Chaos.Text = "Chaos GUI"
+Chaos.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chaos.TextSize = 14.000
+
+Troll.Name = "Troll"
+Troll.Parent = MainFrame
+Troll.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Troll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Troll.BorderSizePixel = 0
+Troll.Position = UDim2.new(0.181458727, 0, 0.493562251, 0)
+Troll.Size = UDim2.new(0, 84, 0, 28)
+Troll.Font = Enum.Font.SourceSans
+Troll.Text = "Trolling GUI"
+Troll.TextColor3 = Color3.fromRGB(0, 0, 0)
+Troll.TextSize = 14.000
+
+Backdoor.Name = "Backdoor"
+Backdoor.Parent = MainFrame
+Backdoor.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Backdoor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Backdoor.BorderSizePixel = 0
+Backdoor.Position = UDim2.new(0.348603576, 0, 0.490346819, 0)
+Backdoor.Size = UDim2.new(0, 84, 0, 28)
+Backdoor.Font = Enum.Font.SourceSans
+Backdoor.Text = "LALOL Backdoor"
+Backdoor.TextColor3 = Color3.fromRGB(0, 0, 0)
+Backdoor.TextSize = 14.000
+
+Bypasser.Name = "Bypasser"
+Bypasser.Parent = MainFrame
+Bypasser.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Bypasser.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bypasser.BorderSizePixel = 0
+Bypasser.Position = UDim2.new(0.348603576, 0, 0.490346819, 0)
+Bypasser.Size = UDim2.new(0, 84, 0, 28)
+Bypasser.Font = Enum.Font.SourceSans
+Bypasser.Text = "Bypass Chat"
+Bypasser.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bypasser.TextSize = 14.000
+
+OwlHub.Name = "Owl Hub"
+OwlHub.Parent = MainFrame
+OwlHub.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+OwlHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.BorderSizePixel = 0
+OwlHub.Position = UDim2.new(0.523809552, 0, 0.490346819, 0)
+OwlHub.Size = UDim2.new(0, 84, 0, 28)
+OwlHub.Font = Enum.Font.SourceSans
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.TextSize = 14.000
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0452079549, 0, 0.0525968, 0)
+TextLabel.Size = UDim2.new(0, 384, 0, 108)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "MADE BY BLOCKYDRAGONHEAD"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 41.000
+TextLabel.TextWrapped = true
+
+Air.Name = "Air"
+Air.Parent = MainFrame
+Air.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Air.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Air.BorderSizePixel = 0
+Air.Position = UDim2.new(0.693791449, 0, 0.490346819, 0)
+Air.Size = UDim2.new(0, 84, 0, 28)
+Air.Font = Enum.Font.SourceSans
+Air.Text = "Air Hub"
+Air.TextColor3 = Color3.fromRGB(0, 0, 0)
+Air.TextSize = 14.000
+
+Scripthub.Name = "Scripthub"
+Scripthub.Parent = MainFrame
+Scripthub.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Scripthub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripthub.BorderSizePixel = 0
+Scripthub.Position = UDim2.new(0.690174758, 0, 0.606102467, 0)
+Scripthub.Size = UDim2.new(0, 84, 0, 28)
+Scripthub.Font = Enum.Font.SourceSans
+Scripthub.Text = "Script Hub V3"
+Scripthub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scripthub.TextSize = 14.000
+
+Mon.Name = "Mon"
+Mon.Parent = MainFrame
+Mon.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Mon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mon.BorderSizePixel = 0
+Mon.Position = UDim2.new(0.693791449, 0, 0.725403428, 0)
+Mon.Size = UDim2.new(0, 84, 0, 28)
+Mon.Font = Enum.Font.SourceSans
+Mon.Text = "Monstro831 Gui"
+Mon.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mon.TextSize = 14.000
+
+UniESP.Name = "UniESP"
+UniESP.Parent = MainFrame
+UniESP.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+UniESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UniESP.BorderSizePixel = 0
+UniESP.Position = UDim2.new(0.0122563671, 0, 0.857236207, 0)
+UniESP.Size = UDim2.new(0, 84, 0, 28)
+UniESP.Font = Enum.Font.SourceSans
+UniESP.Text = "UniversalESP"
+UniESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+UniESP.TextSize = 14.000
+
+backdoorexe.Name = "backdoorexe"
+backdoorexe.Parent = MainFrame
+backdoorexe.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+backdoorexe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+backdoorexe.BorderSizePixel = 0
+backdoorexe.Position = UDim2.new(0.180429965, 0, 0.857236207, 0)
+backdoorexe.Size = UDim2.new(0, 84, 0, 28)
+backdoorexe.Font = Enum.Font.SourceSans
+backdoorexe.Text = "Backdoor.exe"
+backdoorexe.TextColor3 = Color3.fromRGB(0, 0, 0)
+backdoorexe.TextSize = 14.000
+
+Gay.Name = "Gay"
+Gay.Parent = MainFrame
+Gay.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Gay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gay.BorderSizePixel = 0
+Gay.Position = UDim2.new(0.348603576, 0, 0.857236207, 0)
+Gay.Size = UDim2.new(0, 84, 0, 28)
+Gay.Font = Enum.Font.SourceSans
+Gay.Text = "Rainbow GUI"
+Gay.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gay.TextSize = 14.000
+
+Kick.Name = "Kick"
+Kick.Parent = MainFrame
+Kick.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Kick.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Kick.BorderSizePixel = 0
+Kick.Position = UDim2.new(0.522202134, 0, 0.857236207, 0)
+Kick.Size = UDim2.new(0, 84, 0, 28)
+Kick.Font = Enum.Font.SourceSans
+Kick.Text = "Kick yourself"
+Kick.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kick.TextSize = 14.000
+
+Friend.Name = "Friend"
+Friend.Parent = MainFrame
+Friend.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+Friend.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Friend.BorderSizePixel = 0
+Friend.Position = UDim2.new(0.693992376, 0, 0.857236207, 0)
+Friend.Size = UDim2.new(0, 84, 0, 28)
+Friend.Font = Enum.Font.SourceSans
+Friend.Text = "Friend's Gui"
+Friend.TextColor3 = Color3.fromRGB(0, 0, 0)
+Friend.TextSize = 14.000
+
+menu.Name = "menu"
+menu.Parent = MainFrame
+menu.BackgroundColor3 = Color3.fromRGB(227, 227, 227)
+menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+menu.BorderSizePixel = 0
+menu.Position = UDim2.new(0.797066391, 0, 0.622509539, 0)
+menu.Rotation = 90.000
+menu.Size = UDim2.new(0, 136, 0, 57)
+menu.Font = Enum.Font.SourceSans
+menu.Text = "Secret menu >_>"
+menu.TextColor3 = Color3.fromRGB(0, 0, 0)
+menu.TextSize = 14.000
+
+ImageLabel.Parent = MainFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.745027125, 0, 0.0514469445, 0)
+ImageLabel.Size = UDim2.new(0, 130, 0, 130)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=15200212470"
+
+Title.Name = "Title"
+Title.Parent = Border
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.261634082, 0, 0, 0)
+Title.Size = UDim2.new(0, 271, 0, 31)
+Title.Font = Enum.Font.SourceSans
+Title.Text = TitleName
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 22.000
+Title.TextWrapped = true
+
+Icon.Name = "Icon"
+Icon.Parent = Border
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 10.000
+Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Icon.BorderSizePixel = 0
+Icon.Position = UDim2.new(0.0129589634, 0, 0.0220588241, 0)
+Icon.Size = UDim2.new(0, 25, 0, 18)
+Icon.Image = IconID
+
+Exit.Name = "Exit"
+Exit.Parent = Border
+Exit.BackgroundColor3 = Color3.fromRGB(200, 84, 84)
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.890491784, 0, 0, 0)
+Exit.Size = UDim2.new(0, 41, 0, 15)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextSize = 14.000
+
+local UserInputService = game:GetService("UserInputService")
+
+	local gui = Border
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+end)
+
+Animatrix.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ocfi/R6-Animations-Obfuscated/refs/heads/main/R6%20Animations"))()
+end)
+
+Backdoor.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+end)
+
+Bypasser.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BingusWR/catbypassershit/refs/heads/main/someshit"))()
+end)
+
+Chaos.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Wq5UBTnY"))()
+end)
+
+
+--[[
+	THE FLIGHT SCRIPT LOOKS LIKE IT HAS ERRORS
+	BUT IT DOESNT IN GAME
+	TRUST ME :3
+--]]
+
+
+
+Flight.MouseButton1Click:Connect(function()
+	--Waits until the player is in game
+	repeat wait()
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+	local mouse = game.Players.LocalPlayer:GetMouse()
+
+	--Waits until the player's mouse is found
+	repeat wait() until mouse
+
+	--Variables
+	local plr = game.Players.LocalPlayer
+	local torso = plr.Character.Torso
+	local flying = true
+	local deb = true
+	local ctrl = {f = 0, b = 0, l = 0, r = 0}
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	local maxspeed = 50
+	local speed = 0
+	local bg = nil
+	local bv = nil
+
+	--Actual flying
+	function fly()
+		game.StarterGui:SetCore("SendNotification", {Title="Fly Activated"; Text="KYS FAGGOT"; Duration=1;})
+		bg = Instance.new("BodyGyro", torso)
+		bg.P = 9e4
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		bg.cframe = torso.CFrame
+		bv = Instance.new("BodyVelocity", torso)
+		bv.velocity = Vector3.new(0,0.1,0)
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+		repeat wait()
+			plr.Character.Humanoid.PlatformStand = true
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+				speed = speed+.5+(speed/maxspeed)
+				if speed > maxspeed then
+					speed = maxspeed
+				end
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+				speed = speed-1
+				if speed < 0 then
+					speed = 0
+				end
+			end
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			else
+				bv.velocity = Vector3.new(0,0.1,0)
+			end
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+		until not flying
+		ctrl = {f = 0, b = 0, l = 0, r = 0}
+		lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		speed = 0
+		bg:Destroy()
+		bg = nil
+		bv:Destroy()
+		bv = nil
+		plr.Character.Humanoid.PlatformStand = false
+		game.StarterGui:SetCore("SendNotification", {Title="Fly Deactivated"; Text="KYS FAGGOT"; Duration=1;})
+	end
+
+	--Controls
+	mouse.KeyDown:connect(function(key)
+		if key:lower() == "e" then
+			if flying then 
+				flying = false
+			else
+				flying = true
+				fly()
+			end
+		elseif key:lower() == "w" then
+			ctrl.f = 1
+		elseif key:lower() == "s" then
+			ctrl.b = -1
+		elseif key:lower() == "a" then
+			ctrl.l = -1
+		elseif key:lower() == "d" then
+			ctrl.r = 1
+		end
+	end)
+
+	mouse.KeyUp:connect(function(key)
+		if key:lower() == "w" then
+			ctrl.f = 0
+		elseif key:lower() == "s" then
+			ctrl.b = 0
+		elseif key:lower() == "a" then
+			ctrl.l = 0
+		elseif key:lower() == "d" then
+			ctrl.r = 0
+		end
+	end)
+
+	fly()
+end)
+
+JumpPower.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local newJumpHeight = 200
+
+	character.Humanoid.JumpHeight = newJumpHeight
+	player.CharacterAdded:Connect(function(newCharacter)
+		newCharacter:WaitForChild("Humanoid").UseJumpPower = true
+		newCharacter:WaitForChild("Humanoid").JumpHeight = newJumpHeight
+	end)
+end)
+
+Nameless.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+end)
+
+OwlHub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/OwlHub.txt"))()
+end)
+
+Speed.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local newWalkSpeed = 75
+	character.Humanoid.WalkSpeed = newWalkSpeed
+	player.CharacterAdded:Connect(function(newCharacter)
+		newCharacter:WaitForChild("Humanoid").WalkSpeed = newWalkSpeed
+	end)
+end)
+
+Spin.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+
+	local function spinCharacter()
+		local spinSpeed = 150000
+		while true do
+			humanoid.RootPart.CFrame = humanoid.RootPart.CFrame * CFrame.Angles(0, math.rad(spinSpeed), 0)
+			wait(0.05)
+		end
+	end
+
+	spinCharacter()
+end)
+
+TP.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local TweenService = game:GetService("TweenService")
+
+	mouse.Button1Down:Connect(function()
+		local targetPosition = mouse.Hit.p
+		local character = player.Character
+		if character and character:FindFirstChild("HumanoidRootPart") then
+			local humanoidRootPart = character.HumanoidRootPart
+
+			local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear)
+			local goal = {CFrame = CFrame.new(targetPosition)}
+			local tween = TweenService:Create(humanoidRootPart, tweenInfo, goal)
+
+			tween:Play()
+
+			tween.Completed:Wait()
+		end
+	end)
+end)
+
+Troll.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+end)
+
+Yield.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Air.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+end)
+
+Scripthub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
+end)
+
+Mon.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/xex3DYX7"))()
+end)
+
+Friend.MouseButton1Click:Connect(function()
+	print("Coming soon!")
+end)
+
+Kick.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer:Kick()
+end)
+
+Gay.MouseButton1Click:Connect(function()
+	local TweenService = game:GetService('TweenService')
+	local object = Border
+	local tweenInfo = TweenInfo.new(2.5)
+
+	while true do
+		local r, g, b = math.random(), math.random(), math.random()
+		local goal = {BackgroundColor3 = Color3.new(r, g, b)}
+
+		local tween = TweenService:Create(object, tweenInfo, goal)
+		tween:Play()
+		tween.Completed:Wait()
+	end
+end)
+
+backdoorexe.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+end)
+
+UniESP.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HubStudioInjection/Protegen.Genic-Remastered/refs/heads/main/Obf-Source.lua"))()
+end)
+menu.MouseButton1Click:Connect(function()
+	print("Coming soon!")
+end)
+
+menu.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/qP8nFUUs"))()
+end)
