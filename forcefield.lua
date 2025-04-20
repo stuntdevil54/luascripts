@@ -14,7 +14,7 @@
 		--// ☆ Loadtime: 5s - 15s
 ]]--
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/OrionLibModded.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/OrionLibModded.lua')))()
 local Window = OrionLib:MakeWindow({Name = "Forcefield V1 | Basically Pendulum Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "Forcefieldlol"})
 
 OrionLib:MakeNotification({
@@ -344,7 +344,7 @@ Scripts:AddButton({
 --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
-wait(5)
+wait(1)
 
 --[[ Info ]]--
 
