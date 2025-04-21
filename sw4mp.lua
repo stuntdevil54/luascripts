@@ -5237,7 +5237,7 @@ local function HMCUJM_fake_script() -- BootyOffender.LocalScript
 	local script = Instance.new('LocalScript', BootyOffender)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/BootyOffender.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/BootyOffender.lua"))()
 	end)
 end
 coroutine.wrap(HMCUJM_fake_script)()
@@ -5245,33 +5245,33 @@ local function HRBTY_fake_script() -- Chill.LocalScript
 	local script = Instance.new('LocalScript', Chill)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/Chill.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/Chill.lua"))()
 	end)
 end
 coroutine.wrap(HRBTY_fake_script)()
 local function PRFHBO_fake_script() -- ClassicAnimations.LocalScript 
 	local script = Instance.new('LocalScript', ClassicAnimations)
 
-	script.Parent.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/ClassicAnimations.lua"))()  end)
+	script.Parent.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/ClassicAnimations.lua"))()  end)
 end
 coroutine.wrap(PRFHBO_fake_script)()
 local function RSIMKB_fake_script() -- KrystalDanceV2.LocalScript 
 	local script = Instance.new('LocalScript', KrystalDanceV2)
 
-	script.Parent.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/KrystalDance.lua"))() end)
+	script.Parent.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/KrystalDance.lua"))() end)
 end
 coroutine.wrap(RSIMKB_fake_script)()
 local function IQYQDI_fake_script() -- StupidMemeDance.LocalScript 
 	local script = Instance.new('LocalScript', StupidMemeDance)
 
-	script.Parent.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/stupidmemedance.lua"))() end)
+	script.Parent.MouseButton1Click:Connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/stupidmemedance.lua"))() end)
 end
 coroutine.wrap(IQYQDI_fake_script)()
 local function EWTX_fake_script() -- NamelessReanimation.LocalScript 
 	local script = Instance.new('LocalScript', NamelessReanimation)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/namelesssssssss.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/namelesssssssss.lua"))()
 	end)
 end
 coroutine.wrap(EWTX_fake_script)()
@@ -5279,7 +5279,7 @@ local function MWXU_fake_script() -- GaleFighter.LocalScript
 	local script = Instance.new('LocalScript', GaleFighter)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/galefighter.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/galefighter.lua"))()
 	end)
 end
 coroutine.wrap(MWXU_fake_script)()
@@ -5287,7 +5287,7 @@ local function XFEKBXY_fake_script() -- UltimateMemeDance.LocalScript
 	local script = Instance.new('LocalScript', UltimateMemeDance)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/UltimateMemeDance.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/UltimateMemeDance.lua"))()
 	end)
 end
 coroutine.wrap(XFEKBXY_fake_script)()
@@ -5295,7 +5295,7 @@ local function IHJJ_fake_script() -- Sonic.LocalScript
 	local script = Instance.new('LocalScript', Sonic)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/Sonic.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/Sonic.lua"))()
 	end)
 end
 coroutine.wrap(IHJJ_fake_script)()
@@ -5303,7 +5303,7 @@ local function SOKJOWL_fake_script() -- Snail.LocalScript
 	local script = Instance.new('LocalScript', Snail)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/Snail.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/Snail.lua"))()
 	end)
 end
 coroutine.wrap(SOKJOWL_fake_script)()
@@ -5311,7 +5311,7 @@ local function GXHYEP_fake_script() -- Sadboy.LocalScript
 	local script = Instance.new('LocalScript', Sadboy)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScrewedABunch/BlockDragonHead_Scripts/refs/heads/main/Sadboy.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/Sadboy.lua"))()
 	end)
 end
 coroutine.wrap(GXHYEP_fake_script)()
