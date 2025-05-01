@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 110 | Scripts: 36 | Modules: 0 | Tags: 0
+-- Instances: 115 | Scripts: 38 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.AssHurt
@@ -28,17 +28,17 @@ G2L["2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]]
 G2L["2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["BackgroundTransparency"] = 0.25;
 G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2"]["Size"] = UDim2.new(0, 400, 0, 25);
+G2L["2"]["Size"] = UDim2.new(0, 375, 0, 25);
 G2L["2"]["Text"] = [[  AssHurt | V2]];
 G2L["2"]["Name"] = [[main]];
-G2L["2"]["Position"] = UDim2.new(0.50196, 11, 0.4, -9);
+G2L["2"]["Position"] = UDim2.new(0.49345, 11, 0.4, -9);
 
 
 -- StarterGui.AssHurt.main.holder
 G2L["3"] = Instance.new("Frame", G2L["2"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3"]["Size"] = UDim2.new(1, 25, 12, 0);
+G2L["3"]["Size"] = UDim2.new(0, 425, 12, 0);
 G2L["3"]["Position"] = UDim2.new(0, 0, 1, 0);
 G2L["3"]["Name"] = [[holder]];
 G2L["3"]["BackgroundTransparency"] = 0.25;
@@ -178,8 +178,6 @@ G2L["10"] = Instance.new("LocalScript", G2L["f"]);
 G2L["11"] = Instance.new("ScrollingFrame", G2L["3"]);
 G2L["11"]["Visible"] = false;
 G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["11"]["CanvasPosition"] = Vector2.new(0, 89.99997);
 G2L["11"]["TopImage"] = [[rbxasset://textures/blackBkg_square.png]];
 G2L["11"]["MidImage"] = [[rbxasset://textures/blackBkg_square.png]];
 G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -547,58 +545,59 @@ G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
 
 
 
+-- StarterGui.AssHurt.main.holder.scripts_f.bird wings
+G2L["31"] = Instance.new("TextLabel", G2L["11"]);
+G2L["31"]["TextSize"] = 24;
+G2L["31"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["31"]["TextTransparency"] = 0.25;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["BackgroundTransparency"] = 1;
+G2L["31"]["Size"] = UDim2.new(1, -50, 0, 25);
+G2L["31"]["Text"] = [[  bird wings]];
+G2L["31"]["Name"] = [[bird wings]];
+G2L["31"]["Position"] = UDim2.new(0, 0, 0, 65);
+
+
+-- StarterGui.AssHurt.main.holder.scripts_f.bird wings.load
+G2L["32"] = Instance.new("TextButton", G2L["31"]);
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["TextSize"] = 20;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 255);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["32"]["Size"] = UDim2.new(0, 45, 0, 25);
+G2L["32"]["BackgroundTransparency"] = 0.25;
+G2L["32"]["Name"] = [[load]];
+G2L["32"]["ClipsDescendants"] = true;
+G2L["32"]["Text"] = [[load]];
+G2L["32"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
+
+
+-- StarterGui.AssHurt.main.holder.scripts_f.bird wings.load.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+
 -- StarterGui.AssHurt.main.holder.guis_f
-G2L["31"] = Instance.new("ScrollingFrame", G2L["3"]);
-G2L["31"]["BorderSizePixel"] = 0;
-G2L["31"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
-G2L["31"]["TopImage"] = [[rbxasset://textures/blackBkg_square.png]];
-G2L["31"]["MidImage"] = [[rbxasset://textures/blackBkg_square.png]];
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Name"] = [[guis_f]];
-G2L["31"]["BottomImage"] = [[rbxasset://textures/blackBkg_square.png]];
-G2L["31"]["Size"] = UDim2.new(1, -10, 0, 210);
-G2L["31"]["Position"] = UDim2.new(0, 5, 0, 85);
-G2L["31"]["ScrollBarThickness"] = 5;
-G2L["31"]["BackgroundTransparency"] = 0.8;
+G2L["34"] = Instance.new("ScrollingFrame", G2L["3"]);
+G2L["34"]["Visible"] = false;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["CanvasSize"] = UDim2.new(0, 0, 1, 0);
+G2L["34"]["TopImage"] = [[rbxasset://textures/blackBkg_square.png]];
+G2L["34"]["MidImage"] = [[rbxasset://textures/blackBkg_square.png]];
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Name"] = [[guis_f]];
+G2L["34"]["BottomImage"] = [[rbxasset://textures/blackBkg_square.png]];
+G2L["34"]["Size"] = UDim2.new(1, -10, 0, 210);
+G2L["34"]["Position"] = UDim2.new(0, 5, 0, 85);
+G2L["34"]["ScrollBarThickness"] = 5;
+G2L["34"]["BackgroundTransparency"] = 0.8;
 
 
 -- StarterGui.AssHurt.main.holder.guis_f.inf yield
-G2L["32"] = Instance.new("TextLabel", G2L["31"]);
-G2L["32"]["TextSize"] = 24;
-G2L["32"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["32"]["TextTransparency"] = 0.25;
-G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["BackgroundTransparency"] = 1;
-G2L["32"]["Size"] = UDim2.new(1, -50, 0, 25);
-G2L["32"]["Text"] = [[  inf yield]];
-G2L["32"]["Name"] = [[inf yield]];
-G2L["32"]["Position"] = UDim2.new(0, 0, 0, 5);
-
-
--- StarterGui.AssHurt.main.holder.guis_f.inf yield.load
-G2L["33"] = Instance.new("TextButton", G2L["32"]);
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["TextSize"] = 20;
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 255);
-G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["33"]["Size"] = UDim2.new(0, 45, 0, 25);
-G2L["33"]["BackgroundTransparency"] = 0.25;
-G2L["33"]["Name"] = [[load]];
-G2L["33"]["ClipsDescendants"] = true;
-G2L["33"]["Text"] = [[load]];
-G2L["33"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
-
-
--- StarterGui.AssHurt.main.holder.guis_f.inf yield.load.LocalScript
-G2L["34"] = Instance.new("LocalScript", G2L["33"]);
-
-
-
--- StarterGui.AssHurt.main.holder.guis_f.nameless admin
-G2L["35"] = Instance.new("TextLabel", G2L["31"]);
+G2L["35"] = Instance.new("TextLabel", G2L["34"]);
 G2L["35"]["TextSize"] = 24;
 G2L["35"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["35"]["TextTransparency"] = 0.25;
@@ -607,12 +606,12 @@ G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["35"]["BackgroundTransparency"] = 1;
 G2L["35"]["Size"] = UDim2.new(1, -50, 0, 25);
-G2L["35"]["Text"] = [[  nameless admin]];
-G2L["35"]["Name"] = [[nameless admin]];
-G2L["35"]["Position"] = UDim2.new(0, 0, 0, 35);
+G2L["35"]["Text"] = [[  inf yield]];
+G2L["35"]["Name"] = [[inf yield]];
+G2L["35"]["Position"] = UDim2.new(0, 0, 0, 5);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.nameless admin.load
+-- StarterGui.AssHurt.main.holder.guis_f.inf yield.load
 G2L["36"] = Instance.new("TextButton", G2L["35"]);
 G2L["36"]["BorderSizePixel"] = 0;
 G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -627,13 +626,13 @@ G2L["36"]["Text"] = [[load]];
 G2L["36"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.nameless admin.load.LocalScript
+-- StarterGui.AssHurt.main.holder.guis_f.inf yield.load.LocalScript
 G2L["37"] = Instance.new("LocalScript", G2L["36"]);
 
 
 
--- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub
-G2L["38"] = Instance.new("TextLabel", G2L["31"]);
+-- StarterGui.AssHurt.main.holder.guis_f.nameless admin
+G2L["38"] = Instance.new("TextLabel", G2L["34"]);
 G2L["38"]["TextSize"] = 24;
 G2L["38"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["38"]["TextTransparency"] = 0.25;
@@ -642,12 +641,12 @@ G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["38"]["BackgroundTransparency"] = 1;
 G2L["38"]["Size"] = UDim2.new(1, -50, 0, 25);
-G2L["38"]["Text"] = [[  wisl fe hub]];
-G2L["38"]["Name"] = [[wisl fe hub]];
-G2L["38"]["Position"] = UDim2.new(0, 0, 0, 65);
+G2L["38"]["Text"] = [[  nameless admin]];
+G2L["38"]["Name"] = [[nameless admin]];
+G2L["38"]["Position"] = UDim2.new(0, 0, 0, 35);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub.load
+-- StarterGui.AssHurt.main.holder.guis_f.nameless admin.load
 G2L["39"] = Instance.new("TextButton", G2L["38"]);
 G2L["39"]["BorderSizePixel"] = 0;
 G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -662,13 +661,13 @@ G2L["39"]["Text"] = [[load]];
 G2L["39"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub.load.LocalScript
+-- StarterGui.AssHurt.main.holder.guis_f.nameless admin.load.LocalScript
 G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
 
 
 
--- StarterGui.AssHurt.main.holder.guis_f.wedge
-G2L["3b"] = Instance.new("TextLabel", G2L["31"]);
+-- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub
+G2L["3b"] = Instance.new("TextLabel", G2L["34"]);
 G2L["3b"]["TextSize"] = 24;
 G2L["3b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["3b"]["TextTransparency"] = 0.25;
@@ -677,12 +676,12 @@ G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["3b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3b"]["BackgroundTransparency"] = 1;
 G2L["3b"]["Size"] = UDim2.new(1, -50, 0, 25);
-G2L["3b"]["Text"] = [[  wedge anims]];
-G2L["3b"]["Name"] = [[wedge]];
-G2L["3b"]["Position"] = UDim2.new(0, 0, 0, 95);
+G2L["3b"]["Text"] = [[  wisl fe hub]];
+G2L["3b"]["Name"] = [[wisl fe hub]];
+G2L["3b"]["Position"] = UDim2.new(0, 0, 0, 65);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.wedge.load
+-- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub.load
 G2L["3c"] = Instance.new("TextButton", G2L["3b"]);
 G2L["3c"]["BorderSizePixel"] = 0;
 G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -697,13 +696,13 @@ G2L["3c"]["Text"] = [[load]];
 G2L["3c"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.wedge.load.LocalScript
+-- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub.load.LocalScript
 G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
 
 
 
--- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui
-G2L["3e"] = Instance.new("TextLabel", G2L["31"]);
+-- StarterGui.AssHurt.main.holder.guis_f.wedge
+G2L["3e"] = Instance.new("TextLabel", G2L["34"]);
 G2L["3e"]["TextSize"] = 24;
 G2L["3e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["3e"]["TextTransparency"] = 0.25;
@@ -712,12 +711,12 @@ G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["3e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3e"]["BackgroundTransparency"] = 1;
 G2L["3e"]["Size"] = UDim2.new(1, -50, 0, 25);
-G2L["3e"]["Text"] = [[  hyperion c00lgui]];
-G2L["3e"]["Name"] = [[hyperion c00lgui]];
-G2L["3e"]["Position"] = UDim2.new(0, 0, 0, 125);
+G2L["3e"]["Text"] = [[  wedge anims]];
+G2L["3e"]["Name"] = [[wedge]];
+G2L["3e"]["Position"] = UDim2.new(0, 0, 0, 95);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui.load
+-- StarterGui.AssHurt.main.holder.guis_f.wedge.load
 G2L["3f"] = Instance.new("TextButton", G2L["3e"]);
 G2L["3f"]["BorderSizePixel"] = 0;
 G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -732,410 +731,410 @@ G2L["3f"]["Text"] = [[load]];
 G2L["3f"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
 
 
--- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui.load.LocalScript
+-- StarterGui.AssHurt.main.holder.guis_f.wedge.load.LocalScript
 G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
 
 
 
+-- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui
+G2L["41"] = Instance.new("TextLabel", G2L["34"]);
+G2L["41"]["TextSize"] = 24;
+G2L["41"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["41"]["TextTransparency"] = 0.25;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["41"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["BackgroundTransparency"] = 1;
+G2L["41"]["Size"] = UDim2.new(1, -50, 0, 25);
+G2L["41"]["Text"] = [[  hyperion c00lgui]];
+G2L["41"]["Name"] = [[hyperion c00lgui]];
+G2L["41"]["Position"] = UDim2.new(0, 0, 0, 125);
+
+
+-- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui.load
+G2L["42"] = Instance.new("TextButton", G2L["41"]);
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["TextSize"] = 20;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(0, 45, 0, 25);
+G2L["42"]["BackgroundTransparency"] = 0.25;
+G2L["42"]["Name"] = [[load]];
+G2L["42"]["ClipsDescendants"] = true;
+G2L["42"]["Text"] = [[load]];
+G2L["42"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
+
+
+-- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui.load.LocalScript
+G2L["43"] = Instance.new("LocalScript", G2L["42"]);
+
+
+
 -- StarterGui.AssHurt.main.holder.guis_f.UIListLayout
-G2L["41"] = Instance.new("UIListLayout", G2L["31"]);
-G2L["41"]["Padding"] = UDim.new(0, 5);
-G2L["41"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["44"] = Instance.new("UIListLayout", G2L["34"]);
+G2L["44"]["Padding"] = UDim.new(0, 5);
+G2L["44"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AssHurt.main.holder.guis_f.terminal
-G2L["42"] = Instance.new("TextLabel", G2L["31"]);
-G2L["42"]["TextSize"] = 24;
-G2L["42"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["42"]["TextTransparency"] = 0.25;
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["BackgroundTransparency"] = 1;
-G2L["42"]["Size"] = UDim2.new(1, -50, 0, 25);
-G2L["42"]["Text"] = [[  terminal]];
-G2L["42"]["Name"] = [[terminal]];
-G2L["42"]["Position"] = UDim2.new(0, 0, 0, 65);
+G2L["45"] = Instance.new("TextLabel", G2L["34"]);
+G2L["45"]["TextSize"] = 24;
+G2L["45"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["45"]["TextTransparency"] = 0.25;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Size"] = UDim2.new(1, -50, 0, 25);
+G2L["45"]["Text"] = [[  terminal]];
+G2L["45"]["Name"] = [[terminal]];
+G2L["45"]["Position"] = UDim2.new(0, 0, 0, 65);
 
 
 -- StarterGui.AssHurt.main.holder.guis_f.terminal.load
-G2L["43"] = Instance.new("TextButton", G2L["42"]);
-G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["43"]["TextSize"] = 20;
-G2L["43"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 255);
-G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["43"]["Size"] = UDim2.new(0, 45, 0, 25);
-G2L["43"]["BackgroundTransparency"] = 0.25;
-G2L["43"]["Name"] = [[load]];
-G2L["43"]["ClipsDescendants"] = true;
-G2L["43"]["Text"] = [[load]];
-G2L["43"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
+G2L["46"] = Instance.new("TextButton", G2L["45"]);
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["TextSize"] = 20;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["46"]["Size"] = UDim2.new(0, 45, 0, 25);
+G2L["46"]["BackgroundTransparency"] = 0.25;
+G2L["46"]["Name"] = [[load]];
+G2L["46"]["ClipsDescendants"] = true;
+G2L["46"]["Text"] = [[load]];
+G2L["46"]["Position"] = UDim2.new(0.97808, 0, 0, 0);
 
 
 -- StarterGui.AssHurt.main.holder.guis_f.terminal.load.LocalScript
-G2L["44"] = Instance.new("LocalScript", G2L["43"]);
+G2L["47"] = Instance.new("LocalScript", G2L["46"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.executor_f
-G2L["45"] = Instance.new("Frame", G2L["3"]);
-G2L["45"]["Visible"] = false;
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Size"] = UDim2.new(1, -10, 0, 210);
-G2L["45"]["Position"] = UDim2.new(0.01176, 0, 0.28333, 0);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["45"]["Name"] = [[executor_f]];
-G2L["45"]["BackgroundTransparency"] = 0.8;
+G2L["48"] = Instance.new("Frame", G2L["3"]);
+G2L["48"]["Visible"] = false;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Size"] = UDim2.new(1, -10, 0, 210);
+G2L["48"]["Position"] = UDim2.new(0.01176, 0, 0.28333, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Name"] = [[executor_f]];
+G2L["48"]["BackgroundTransparency"] = 0.8;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox
-G2L["46"] = Instance.new("ScrollingFrame", G2L["45"]);
-G2L["46"]["Active"] = true;
-G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["CanvasSize"] = UDim2.new(32, 0, 32, 0);
-G2L["46"]["TopImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
-G2L["46"]["BackgroundColor3"] = Color3.fromRGB(254, 255, 254);
-G2L["46"]["Name"] = [[FastTextBox]];
-G2L["46"]["BottomImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
-G2L["46"]["Size"] = UDim2.new(0, 406, 0, 169);
-G2L["46"]["ScrollBarImageColor3"] = Color3.fromRGB(128, 130, 127);
-G2L["46"]["Position"] = UDim2.new(0.01141, 0, 0.01343, 1);
-G2L["46"]["BorderColor3"] = Color3.fromRGB(127, 129, 126);
-G2L["46"]["ScrollBarThickness"] = 0;
-G2L["46"]["BackgroundTransparency"] = 0.75;
+G2L["49"] = Instance.new("ScrollingFrame", G2L["48"]);
+G2L["49"]["Active"] = true;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["CanvasSize"] = UDim2.new(32, 0, 32, 0);
+G2L["49"]["TopImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(254, 255, 254);
+G2L["49"]["Name"] = [[FastTextBox]];
+G2L["49"]["BottomImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
+G2L["49"]["Size"] = UDim2.new(0, 406, 0, 169);
+G2L["49"]["ScrollBarImageColor3"] = Color3.fromRGB(128, 130, 127);
+G2L["49"]["Position"] = UDim2.new(0.01141, 0, 0.01343, 1);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(127, 129, 126);
+G2L["49"]["ScrollBarThickness"] = 0;
+G2L["49"]["BackgroundTransparency"] = 0.75;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.TextBox
-G2L["47"] = Instance.new("TextBox", G2L["46"]);
-G2L["47"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextWrapped"] = true;
-G2L["47"]["TextTransparency"] = 1;
-G2L["47"]["TextSize"] = 15;
-G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(29, 35, 46);
-G2L["47"]["RichText"] = true;
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["47"]["MultiLine"] = true;
-G2L["47"]["ClearTextOnFocus"] = false;
-G2L["47"]["Size"] = UDim2.new(10, -27, 1, 0);
-G2L["47"]["Position"] = UDim2.new(0, 20, 0, 0);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Text"] = [[]];
-G2L["47"]["BackgroundTransparency"] = 1;
+G2L["4a"] = Instance.new("TextBox", G2L["49"]);
+G2L["4a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["TextTransparency"] = 1;
+G2L["4a"]["TextSize"] = 15;
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(29, 35, 46);
+G2L["4a"]["RichText"] = true;
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["MultiLine"] = true;
+G2L["4a"]["ClearTextOnFocus"] = false;
+G2L["4a"]["Size"] = UDim2.new(10, -27, 1, 0);
+G2L["4a"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[]];
+G2L["4a"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.TextBox.LineChecker
-G2L["48"] = Instance.new("LocalScript", G2L["47"]);
-G2L["48"]["Name"] = [[LineChecker]];
+G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["4b"]["Name"] = [[LineChecker]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.LinesFrame
-G2L["49"] = Instance.new("Frame", G2L["46"]);
-G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["Size"] = UDim2.new(0, 20, 17.91826, 0);
-G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Name"] = [[LinesFrame]];
-G2L["49"]["BackgroundTransparency"] = 1;
+G2L["4c"] = Instance.new("Frame", G2L["49"]);
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["Size"] = UDim2.new(0, 20, 17.91826, 0);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Name"] = [[LinesFrame]];
+G2L["4c"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.LinesFrame.TextLabelTemplate
-G2L["4a"] = Instance.new("TextLabel", G2L["49"]);
-G2L["4a"]["TextWrapped"] = true;
-G2L["4a"]["BorderSizePixel"] = 0;
-G2L["4a"]["TextSize"] = 15;
-G2L["4a"]["TextTransparency"] = 0.49;
-G2L["4a"]["TextScaled"] = true;
-G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4a"]["BackgroundTransparency"] = 1;
-G2L["4a"]["Size"] = UDim2.new(0, 20, 0, 15);
-G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4a"]["Text"] = [[1]];
-G2L["4a"]["Name"] = [[TextLabelTemplate]];
+G2L["4d"] = Instance.new("TextLabel", G2L["4c"]);
+G2L["4d"]["TextWrapped"] = true;
+G2L["4d"]["BorderSizePixel"] = 0;
+G2L["4d"]["TextSize"] = 15;
+G2L["4d"]["TextTransparency"] = 0.49;
+G2L["4d"]["TextScaled"] = true;
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["BackgroundTransparency"] = 1;
+G2L["4d"]["Size"] = UDim2.new(0, 20, 0, 15);
+G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4d"]["Text"] = [[1]];
+G2L["4d"]["Name"] = [[TextLabelTemplate]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.LinesFrame.UIListLayout
-G2L["4b"] = Instance.new("UIListLayout", G2L["49"]);
-G2L["4b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["4e"] = Instance.new("UIListLayout", G2L["4c"]);
+G2L["4e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.LinesValue
-G2L["4c"] = Instance.new("NumberValue", G2L["46"]);
-G2L["4c"]["Name"] = [[LinesValue]];
-G2L["4c"]["Value"] = 1;
+G2L["4f"] = Instance.new("NumberValue", G2L["49"]);
+G2L["4f"]["Name"] = [[LinesValue]];
+G2L["4f"]["Value"] = 1;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Lines
-G2L["4d"] = Instance.new("LocalScript", G2L["46"]);
-G2L["4d"]["Name"] = [[Lines]];
+G2L["50"] = Instance.new("LocalScript", G2L["49"]);
+G2L["50"]["Name"] = [[Lines]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Highlighting
-G2L["4e"] = Instance.new("TextLabel", G2L["46"]);
-G2L["4e"]["TextWrapped"] = true;
-G2L["4e"]["TextStrokeTransparency"] = 0;
-G2L["4e"]["BorderSizePixel"] = 0;
-G2L["4e"]["TextSize"] = 15;
-G2L["4e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["4e"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["BackgroundTransparency"] = 1;
-G2L["4e"]["RichText"] = true;
-G2L["4e"]["Size"] = UDim2.new(10, -27, 1, 0);
-G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Text"] = [[]];
-G2L["4e"]["Name"] = [[Highlighting]];
-G2L["4e"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["51"] = Instance.new("TextLabel", G2L["49"]);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["TextStrokeTransparency"] = 0;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["TextSize"] = 15;
+G2L["51"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["51"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["51"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["BackgroundTransparency"] = 1;
+G2L["51"]["RichText"] = true;
+G2L["51"]["Size"] = UDim2.new(10, -27, 1, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Text"] = [[]];
+G2L["51"]["Name"] = [[Highlighting]];
+G2L["51"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.UIStroke
-G2L["4f"] = Instance.new("UIStroke", G2L["46"]);
-G2L["4f"]["Transparency"] = 0.82;
-G2L["4f"]["Color"] = Color3.fromRGB(216, 168, 255);
+G2L["52"] = Instance.new("UIStroke", G2L["49"]);
+G2L["52"]["Transparency"] = 0.82;
+G2L["52"]["Color"] = Color3.fromRGB(216, 168, 255);
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Syntax
-G2L["50"] = Instance.new("LocalScript", G2L["46"]);
-G2L["50"]["Name"] = [[Syntax]];
+G2L["53"] = Instance.new("LocalScript", G2L["49"]);
+G2L["53"]["Name"] = [[Syntax]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.LineSelector
-G2L["51"] = Instance.new("Frame", G2L["46"]);
-G2L["51"]["ZIndex"] = -7;
-G2L["51"]["BorderSizePixel"] = 0;
-G2L["51"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["Size"] = UDim2.new(1, 0, 0, 15);
-G2L["51"]["Position"] = UDim2.new(0, 20, 0, 0);
-G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["Name"] = [[LineSelector]];
-G2L["51"]["BackgroundTransparency"] = 1;
+G2L["54"] = Instance.new("Frame", G2L["49"]);
+G2L["54"]["ZIndex"] = -7;
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Size"] = UDim2.new(1, 0, 0, 15);
+G2L["54"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Name"] = [[LineSelector]];
+G2L["54"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Selector
-G2L["52"] = Instance.new("LocalScript", G2L["46"]);
-G2L["52"]["Name"] = [[Selector]];
+G2L["55"] = Instance.new("LocalScript", G2L["49"]);
+G2L["55"]["Name"] = [[Selector]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Cursor
-G2L["53"] = Instance.new("Frame", G2L["46"]);
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Size"] = UDim2.new(0, 1, 0, 15);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Name"] = [[Cursor]];
+G2L["56"] = Instance.new("Frame", G2L["49"]);
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Size"] = UDim2.new(0, 1, 0, 15);
+G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Name"] = [[Cursor]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.CursorScript
-G2L["54"] = Instance.new("LocalScript", G2L["46"]);
-G2L["54"]["Name"] = [[CursorScript]];
+G2L["57"] = Instance.new("LocalScript", G2L["49"]);
+G2L["57"]["Name"] = [[CursorScript]];
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.TextMeasurer
-G2L["55"] = Instance.new("TextLabel", G2L["46"]);
-G2L["55"]["BorderSizePixel"] = 0;
-G2L["55"]["TextSize"] = 15;
-G2L["55"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["55"]["TextTransparency"] = 1;
-G2L["55"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["BackgroundTransparency"] = 1;
-G2L["55"]["RichText"] = true;
-G2L["55"]["Size"] = UDim2.new(10, -27, 1, 0);
-G2L["55"]["Visible"] = false;
-G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["55"]["Text"] = [[]];
-G2L["55"]["Name"] = [[TextMeasurer]];
-G2L["55"]["Position"] = UDim2.new(0, 20, 0, 0);
+G2L["58"] = Instance.new("TextLabel", G2L["49"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["TextSize"] = 15;
+G2L["58"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["58"]["TextTransparency"] = 1;
+G2L["58"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["BackgroundTransparency"] = 1;
+G2L["58"]["RichText"] = true;
+G2L["58"]["Size"] = UDim2.new(10, -27, 1, 0);
+G2L["58"]["Visible"] = false;
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Text"] = [[]];
+G2L["58"]["Name"] = [[TextMeasurer]];
+G2L["58"]["Position"] = UDim2.new(0, 20, 0, 0);
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.exe
-G2L["56"] = Instance.new("TextButton", G2L["45"]);
-G2L["56"]["BorderSizePixel"] = 0;
-G2L["56"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["56"]["TextTransparency"] = 0.25;
-G2L["56"]["TextSize"] = 20;
-G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["56"]["Size"] = UDim2.new(0, 105, 0, 31);
-G2L["56"]["BackgroundTransparency"] = 0.75;
-G2L["56"]["Name"] = [[exe]];
-G2L["56"]["ClipsDescendants"] = true;
-G2L["56"]["Text"] = [[execute]];
-G2L["56"]["Position"] = UDim2.new(0, 4, 0, 176);
+G2L["59"] = Instance.new("TextButton", G2L["48"]);
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["TextTransparency"] = 0.25;
+G2L["59"]["TextSize"] = 20;
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["59"]["Size"] = UDim2.new(0, 105, 0, 31);
+G2L["59"]["BackgroundTransparency"] = 0.75;
+G2L["59"]["Name"] = [[exe]];
+G2L["59"]["ClipsDescendants"] = true;
+G2L["59"]["Text"] = [[execute]];
+G2L["59"]["Position"] = UDim2.new(0, 4, 0, 176);
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.exe.LocalScript
-G2L["57"] = Instance.new("LocalScript", G2L["56"]);
+G2L["5a"] = Instance.new("LocalScript", G2L["59"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.cls
-G2L["58"] = Instance.new("TextButton", G2L["45"]);
-G2L["58"]["BorderSizePixel"] = 0;
-G2L["58"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["TextTransparency"] = 0.25;
-G2L["58"]["TextSize"] = 20;
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["58"]["Size"] = UDim2.new(0, 105, 0, 31);
-G2L["58"]["BackgroundTransparency"] = 0.75;
-G2L["58"]["Name"] = [[cls]];
-G2L["58"]["ClipsDescendants"] = true;
-G2L["58"]["Text"] = [[clear]];
-G2L["58"]["Position"] = UDim2.new(0, 112, 0, 176);
+G2L["5b"] = Instance.new("TextButton", G2L["48"]);
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5b"]["TextTransparency"] = 0.25;
+G2L["5b"]["TextSize"] = 20;
+G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5b"]["Size"] = UDim2.new(0, 105, 0, 31);
+G2L["5b"]["BackgroundTransparency"] = 0.75;
+G2L["5b"]["Name"] = [[cls]];
+G2L["5b"]["ClipsDescendants"] = true;
+G2L["5b"]["Text"] = [[clear]];
+G2L["5b"]["Position"] = UDim2.new(0, 112, 0, 176);
 
 
 -- StarterGui.AssHurt.main.holder.executor_f.cls.LocalScript
-G2L["59"] = Instance.new("LocalScript", G2L["58"]);
+G2L["5c"] = Instance.new("LocalScript", G2L["5b"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.clogs_f
-G2L["5a"] = Instance.new("ScrollingFrame", G2L["3"]);
-G2L["5a"]["Visible"] = false;
-G2L["5a"]["Active"] = true;
-G2L["5a"]["BorderSizePixel"] = 0;
-G2L["5a"]["CanvasSize"] = UDim2.new(50, 0, 50, 0);
-G2L["5a"]["TopImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Name"] = [[clogs_f]];
-G2L["5a"]["BottomImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
-G2L["5a"]["Size"] = UDim2.new(1, -10, 0, 210);
-G2L["5a"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Position"] = UDim2.new(0, 5, 0, 85);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["ScrollBarThickness"] = 8;
-G2L["5a"]["BackgroundTransparency"] = 0.8;
+G2L["5d"] = Instance.new("ScrollingFrame", G2L["3"]);
+G2L["5d"]["Visible"] = false;
+G2L["5d"]["Active"] = true;
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["CanvasSize"] = UDim2.new(50, 0, 50, 0);
+G2L["5d"]["TopImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Name"] = [[clogs_f]];
+G2L["5d"]["BottomImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
+G2L["5d"]["Size"] = UDim2.new(1, -10, 0, 210);
+G2L["5d"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Position"] = UDim2.new(0, 5, 0, 85);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["ScrollBarThickness"] = 8;
+G2L["5d"]["BackgroundTransparency"] = 0.8;
 
 
 -- StarterGui.AssHurt.main.holder.clogs_f.ex
-G2L["5b"] = Instance.new("TextLabel", G2L["5a"]);
-G2L["5b"]["BorderSizePixel"] = 0;
-G2L["5b"]["TextSize"] = 24;
-G2L["5b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5b"]["TextTransparency"] = 0.25;
-G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5b"]["BackgroundTransparency"] = 1;
-G2L["5b"]["Size"] = UDim2.new(1, 0, 0, 24);
-G2L["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5b"]["Text"] = [[ [S]: Chatlogs are automatically logged!]];
-G2L["5b"]["Name"] = [[ex]];
-G2L["5b"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["5e"] = Instance.new("TextLabel", G2L["5d"]);
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextSize"] = 24;
+G2L["5e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5e"]["TextTransparency"] = 0.25;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["BackgroundTransparency"] = 1;
+G2L["5e"]["Size"] = UDim2.new(1, 0, 0, 24);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[ [S]: Chatlogs are automatically logged!]];
+G2L["5e"]["Name"] = [[ex]];
+G2L["5e"]["Position"] = UDim2.new(0, 0, -0, 0);
 
 
 -- StarterGui.AssHurt.main.holder.clogs_f.UIListLayout
-G2L["5c"] = Instance.new("UIListLayout", G2L["5a"]);
-G2L["5c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["5f"] = Instance.new("UIListLayout", G2L["5d"]);
+G2L["5f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AssHurt.main.holder.clogs_f.LocalScript
-G2L["5d"] = Instance.new("LocalScript", G2L["5a"]);
+G2L["60"] = Instance.new("LocalScript", G2L["5d"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.plogs_f
-G2L["5e"] = Instance.new("ScrollingFrame", G2L["3"]);
-G2L["5e"]["Visible"] = false;
-G2L["5e"]["Active"] = true;
-G2L["5e"]["BorderSizePixel"] = 0;
-G2L["5e"]["CanvasSize"] = UDim2.new(50, 0, 50, 0);
-G2L["5e"]["TopImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
-G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["Name"] = [[plogs_f]];
-G2L["5e"]["BottomImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
-G2L["5e"]["Size"] = UDim2.new(1, -10, 0, 210);
-G2L["5e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["Position"] = UDim2.new(0, 5, 0, 85);
-G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["ScrollBarThickness"] = 8;
-G2L["5e"]["BackgroundTransparency"] = 0.8;
+G2L["61"] = Instance.new("ScrollingFrame", G2L["3"]);
+G2L["61"]["Visible"] = false;
+G2L["61"]["Active"] = true;
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["CanvasSize"] = UDim2.new(50, 0, 50, 0);
+G2L["61"]["TopImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Name"] = [[plogs_f]];
+G2L["61"]["BottomImage"] = [[rbxasset://textures/ui/Scroll/scroll-middle.png]];
+G2L["61"]["Size"] = UDim2.new(1, -10, 0, 210);
+G2L["61"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Position"] = UDim2.new(0, 5, 0, 85);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["ScrollBarThickness"] = 8;
+G2L["61"]["BackgroundTransparency"] = 0.8;
 
 
 -- StarterGui.AssHurt.main.holder.plogs_f.ex
-G2L["5f"] = Instance.new("TextLabel", G2L["5e"]);
-G2L["5f"]["BorderSizePixel"] = 0;
-G2L["5f"]["TextSize"] = 24;
-G2L["5f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["5f"]["TextTransparency"] = 0.25;
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["BackgroundTransparency"] = 1;
-G2L["5f"]["Size"] = UDim2.new(1, 0, 0, 24);
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[ [S]: Joinlogs are automatically logged!]];
-G2L["5f"]["Name"] = [[ex]];
-G2L["5f"]["Position"] = UDim2.new(0, 0, -0, 0);
+G2L["62"] = Instance.new("TextLabel", G2L["61"]);
+G2L["62"]["BorderSizePixel"] = 0;
+G2L["62"]["TextSize"] = 24;
+G2L["62"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["62"]["TextTransparency"] = 0.25;
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["62"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["BackgroundTransparency"] = 1;
+G2L["62"]["Size"] = UDim2.new(1, 0, 0, 24);
+G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["Text"] = [[ [S]: Joinlogs are automatically logged!]];
+G2L["62"]["Name"] = [[ex]];
+G2L["62"]["Position"] = UDim2.new(0, 0, -0, 0);
 
 
 -- StarterGui.AssHurt.main.holder.plogs_f.UIListLayout
-G2L["60"] = Instance.new("UIListLayout", G2L["5e"]);
-G2L["60"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["63"] = Instance.new("UIListLayout", G2L["61"]);
+G2L["63"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.AssHurt.main.holder.plogs_f.LocalScript
-G2L["61"] = Instance.new("LocalScript", G2L["5e"]);
+G2L["64"] = Instance.new("LocalScript", G2L["61"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.server_f
-G2L["62"] = Instance.new("Frame", G2L["3"]);
-G2L["62"]["Visible"] = false;
-G2L["62"]["BorderSizePixel"] = 0;
-G2L["62"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["62"]["Size"] = UDim2.new(1, -10, 0, 210);
-G2L["62"]["Position"] = UDim2.new(0, 5, 0, 85);
-G2L["62"]["Name"] = [[server_f]];
-G2L["62"]["BackgroundTransparency"] = 0.8;
+G2L["65"] = Instance.new("Frame", G2L["3"]);
+G2L["65"]["BorderSizePixel"] = 0;
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Size"] = UDim2.new(1, -10, 0, 210);
+G2L["65"]["Position"] = UDim2.new(0, 5, 0, 85);
+G2L["65"]["Name"] = [[server_f]];
+G2L["65"]["BackgroundTransparency"] = 0.8;
 
 
 -- StarterGui.AssHurt.main.holder.server_f.fe
-G2L["63"] = Instance.new("TextLabel", G2L["62"]);
-G2L["63"]["TextSize"] = 24;
-G2L["63"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["63"]["TextTransparency"] = 0.25;
-G2L["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["63"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["63"]["BackgroundTransparency"] = 1;
-G2L["63"]["Size"] = UDim2.new(1, 0, 0, 30);
-G2L["63"]["Text"] = [[ FilteringEnabled | true]];
-G2L["63"]["Name"] = [[fe]];
-
-
--- StarterGui.AssHurt.main.holder.server_f.place_id
-G2L["64"] = Instance.new("TextLabel", G2L["62"]);
-G2L["64"]["TextSize"] = 24;
-G2L["64"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["64"]["TextTransparency"] = 0.25;
-G2L["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["64"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["64"]["BackgroundTransparency"] = 1;
-G2L["64"]["Size"] = UDim2.new(1, 0, 0, 30);
-G2L["64"]["Text"] = [[ Place ID | 113334750492403]];
-G2L["64"]["Name"] = [[place_id]];
-G2L["64"]["Position"] = UDim2.new(0, 0, 0, 90);
-
-
--- StarterGui.AssHurt.main.holder.server_f.place_id.LocalScript
-G2L["65"] = Instance.new("LocalScript", G2L["64"]);
-
-
-
--- StarterGui.AssHurt.main.holder.server_f.players
-G2L["66"] = Instance.new("TextLabel", G2L["62"]);
+G2L["66"] = Instance.new("TextLabel", G2L["65"]);
 G2L["66"]["TextSize"] = 24;
 G2L["66"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["66"]["TextTransparency"] = 0.25;
@@ -1144,74 +1143,124 @@ G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["66"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["66"]["BackgroundTransparency"] = 1;
 G2L["66"]["Size"] = UDim2.new(1, 0, 0, 30);
-G2L["66"]["Text"] = [[ Players | 0/0]];
-G2L["66"]["Name"] = [[players]];
-G2L["66"]["Position"] = UDim2.new(0, 0, 0, 120);
+G2L["66"]["Text"] = [[ FilteringEnabled | true]];
+G2L["66"]["Name"] = [[fe]];
+
+
+-- StarterGui.AssHurt.main.holder.server_f.place_id
+G2L["67"] = Instance.new("TextLabel", G2L["65"]);
+G2L["67"]["TextSize"] = 24;
+G2L["67"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["67"]["TextTransparency"] = 0.25;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["67"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["BackgroundTransparency"] = 1;
+G2L["67"]["Size"] = UDim2.new(1, 0, 0, 30);
+G2L["67"]["Text"] = [[ Place ID | 113334750492403]];
+G2L["67"]["Name"] = [[place_id]];
+G2L["67"]["Position"] = UDim2.new(0, 0, 0, 90);
+
+
+-- StarterGui.AssHurt.main.holder.server_f.place_id.LocalScript
+G2L["68"] = Instance.new("LocalScript", G2L["67"]);
+
+
+
+-- StarterGui.AssHurt.main.holder.server_f.players
+G2L["69"] = Instance.new("TextLabel", G2L["65"]);
+G2L["69"]["TextSize"] = 24;
+G2L["69"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["69"]["TextTransparency"] = 0.25;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["69"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["BackgroundTransparency"] = 1;
+G2L["69"]["Size"] = UDim2.new(1, 0, 0, 30);
+G2L["69"]["Text"] = [[ Players | 0/0]];
+G2L["69"]["Name"] = [[players]];
+G2L["69"]["Position"] = UDim2.new(0, 0, 0, 120);
 
 
 -- StarterGui.AssHurt.main.holder.server_f.players.LocalScript
-G2L["67"] = Instance.new("LocalScript", G2L["66"]);
+G2L["6a"] = Instance.new("LocalScript", G2L["69"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.server_f.time
-G2L["68"] = Instance.new("TextLabel", G2L["62"]);
-G2L["68"]["TextSize"] = 24;
-G2L["68"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["68"]["TextTransparency"] = 0.25;
-G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["68"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["BackgroundTransparency"] = 1;
-G2L["68"]["Size"] = UDim2.new(1, 0, 0, 30);
-G2L["68"]["Text"] = [[ Time | 14:00:00]];
-G2L["68"]["Name"] = [[time]];
-G2L["68"]["Position"] = UDim2.new(0, 0, 0, 60);
+G2L["6b"] = Instance.new("TextLabel", G2L["65"]);
+G2L["6b"]["TextSize"] = 24;
+G2L["6b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6b"]["TextTransparency"] = 0.25;
+G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6b"]["BackgroundTransparency"] = 1;
+G2L["6b"]["Size"] = UDim2.new(1, 0, 0, 30);
+G2L["6b"]["Text"] = [[ Time | 14:00:00]];
+G2L["6b"]["Name"] = [[time]];
+G2L["6b"]["Position"] = UDim2.new(0, 0, 0, 60);
 
 
 -- StarterGui.AssHurt.main.holder.server_f.time.LocalScript
-G2L["69"] = Instance.new("LocalScript", G2L["68"]);
+G2L["6c"] = Instance.new("LocalScript", G2L["6b"]);
 
 
 
 -- StarterGui.AssHurt.main.holder.server_f.gravity
-G2L["6a"] = Instance.new("TextLabel", G2L["62"]);
-G2L["6a"]["TextSize"] = 24;
-G2L["6a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6a"]["TextTransparency"] = 0.25;
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["BackgroundTransparency"] = 1;
-G2L["6a"]["Size"] = UDim2.new(1, 0, 0, 30);
-G2L["6a"]["Text"] = [[ Gravity | 196.1999969482422]];
-G2L["6a"]["Name"] = [[gravity]];
-G2L["6a"]["Position"] = UDim2.new(0, 0, 0, 30);
+G2L["6d"] = Instance.new("TextLabel", G2L["65"]);
+G2L["6d"]["TextSize"] = 24;
+G2L["6d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6d"]["TextTransparency"] = 0.25;
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["BackgroundTransparency"] = 1;
+G2L["6d"]["Size"] = UDim2.new(1, 0, 0, 30);
+G2L["6d"]["Text"] = [[ Gravity | 196.1999969482422]];
+G2L["6d"]["Name"] = [[gravity]];
+G2L["6d"]["Position"] = UDim2.new(0, 0, 0, 30);
 
 
 -- StarterGui.AssHurt.main.holder.server_f.gravity.LocalScript
-G2L["6b"] = Instance.new("LocalScript", G2L["6a"]);
+G2L["6e"] = Instance.new("LocalScript", G2L["6d"]);
 
 
 
--- StarterGui.AssHurt.main.close
-G2L["6c"] = Instance.new("TextButton", G2L["2"]);
-G2L["6c"]["BorderSizePixel"] = 0;
-G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 51, 51);
-G2L["6c"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["6c"]["BackgroundTransparency"] = 0.25;
-G2L["6c"]["Name"] = [[close]];
-G2L["6c"]["Text"] = [[]];
-G2L["6c"]["Position"] = UDim2.new(1, 0, 0, 0);
+-- StarterGui.AssHurt.main.min
+G2L["6f"] = Instance.new("TextButton", G2L["2"]);
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(58, 104, 255);
+G2L["6f"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["6f"]["BackgroundTransparency"] = 0.25;
+G2L["6f"]["Name"] = [[min]];
+G2L["6f"]["Text"] = [[]];
+G2L["6f"]["Position"] = UDim2.new(0, 375, 0, 0);
 
 
--- StarterGui.AssHurt.main.close.LocalScript
-G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
+-- StarterGui.AssHurt.main.min.LocalScript
+G2L["70"] = Instance.new("LocalScript", G2L["6f"]);
 
 
 
 -- StarterGui.AssHurt.main.UIDragDetector
-G2L["6e"] = Instance.new("UIDragDetector", G2L["2"]);
+G2L["71"] = Instance.new("UIDragDetector", G2L["2"]);
+
+
+
+-- StarterGui.AssHurt.main.close
+G2L["72"] = Instance.new("TextButton", G2L["2"]);
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 51, 51);
+G2L["72"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["72"]["BackgroundTransparency"] = 0.25;
+G2L["72"]["Name"] = [[close]];
+G2L["72"]["Text"] = [[]];
+G2L["72"]["Position"] = UDim2.new(0, 400, 0, 0);
+
+
+-- StarterGui.AssHurt.main.close.LocalScript
+G2L["73"] = Instance.new("LocalScript", G2L["72"]);
 
 
 
@@ -1693,57 +1742,494 @@ local script = G2L["30"];
 	end)
 end;
 task.spawn(C_30);
+-- StarterGui.AssHurt.main.holder.scripts_f.bird wings.load.LocalScript
+local function C_33()
+local script = G2L["33"];
+	script.Parent.MouseButton1Click:Connect(function()
+		--[[ To fly jump 2 times -ulti55]]
+		--[[ To go down press q ]]
+		script.Parent = nil
+		function fly()
+			for i,v in pairs(script:GetChildren()) do
+				pcall(function() v.Value = "" end)
+				game:GetService("Debris"):AddItem(v,.1)
+			end
+			function weld(p0,p1,c0,c1,par)
+				local w = Instance.new("Weld",p0 or par)
+				w.Part0 = p0
+				w.Part1 = p1
+				w.C0 = c0 or CFrame.new()
+				w.C1 = c1 or CFrame.new()
+				return w
+			end
+			local motors = {}
+			function motor(p0,p1,c0,c1,des,vel,par)
+				local w = Instance.new("Motor6D",p0 or par)
+				w.Part0 = p0
+				w.Part1 = p1
+				w.C0 = c0 or CFrame.new()
+				w.C1 = c1 or CFrame.new()
+				w.MaxVelocity = tonumber(vel) or .05
+				w.DesiredAngle = tonumber(des) or 0
+				return w
+			end
+			function lerp(a,b,c)
+				return a+(b-a)*c
+			end
+			function clerp(c1,c2,al)
+				local com1 = {c1.X,c1.Y,c1.Z,c1:toEulerAnglesXYZ()}
+				local com2 = {c2.X,c2.Y,c2.Z,c2:toEulerAnglesXYZ()}
+				for i,v in pairs(com1) do
+					com1[i] = lerp(v,com2[i],al)
+				end
+				return CFrame.new(com1[1],com1[2],com1[3]) * CFrame.Angles(select(4,unpack(com1)))
+			end
+			function ccomplerp(c1,c2,al)
+				local com1 = {c1:components()}
+				local com2 = {c2:components()}
+				for i,v in pairs(com1) do
+					com1[i] = lerp(v,com2[i],al)
+				end
+				return CFrame.new(unpack(com1))
+			end
+			function tickwave(time,length,offset)
+				return (math.abs((tick()+(offset or 0))%time-time/2)*2-time/2)/time/2*length
+			end
+			function invcol(c)
+				c = c.Color
+				return BrickColor.new(Color3.new(1-c.b,1-c.g,1-c.r))
+			end
+			local oc = oc or function(...) return ... end
+			local plr = game.Players.LocalPlayer
+			local char = plr.Character
+			local tor = char.Torso
+			local hum = char.Humanoid
+			hum.PlatformStand = false
+			pcall(function()
+				char.Wings:Destroy()
+			end)
+			pcall(function()
+				char.Angel:Destroy() -- hat
+			end)
+			local mod = Instance.new("Model",char)
+			mod.Name = "gay"
+			local special = {
+				--antiboomz0r = {"Really black","Institutional white",0,0,false,Color3.new(1,1,.95),Color3.new(1,1,.6)},
+				antiboomz0r = {"New Yeller",nil,0.4,0.7,true,Color3.new(1,1,.95),Color3.new(1,1,.6)},
+				--antiboomz0r = {"Cyan","Toothpaste",0,0,false,Color3.new(1,0,0),Color3.new(0,0,0)},
+				taart = {"Royal purple",nil,.4,.4,true},
+				mitta = {"Black",nil,0,0,false},
+				penjuin3 = {"White",nil,0,0,false},
+				thepc8110 = {"Black","Bright red",.5,0,false,Color3.new(1,0,0),Color3.new(0,0,0)},
+				nonspeaker = {"Cyan","Toothpaste",0,0,false,Color3.new(1,0,0),Color3.new(0,0,0)},
+				littleau999 = {"Reddish brown",1030,0,0,false},
+				unscripter = {"Really black","Really black",.2,0,true,Color3.new(0,0,0),Color3.new(0,0,0)},
+				oxcool1 = {"Really black","White",.2,0,false,Color3.new(0,0,0),Color3.new(0,0,0)},
+				krodmiss = {"Really black",nil,0,0,false},
+			}
+			local topcolor = invcol(char.Torso.BrickColor)
+			local feacolor = char.Torso.BrickColor
+			local ptrans = 0
+			local pref = 0
+			local fire = false
+			local fmcol = Color3.new()
+			local fscol = Color3.new()
+			local spec = special[plr.Name:lower()]
+			if spec then
+				topcolor,feacolor,ptrans,pref,fire,fmcol,fscol = spec[1] and BrickColor.new(spec[1]) or topcolor,spec[2] and BrickColor.new(spec[2]) or feacolor,spec[3],spec[4],spec[5],spec[6],spec[7]
+			end
+			local part = Instance.new("Part")
+			part.FormFactor = "Custom"
+			part.Size = Vector3.new(.2,.2,.2)
+			part.TopSurface,part.BottomSurface = 0,0
+			part.CanCollide = false
+			part.BrickColor = topcolor
+			part.Transparency = ptrans
+			part.Reflectance = pref
+			local ef = Instance.new("Fire",fire and part or nil)
+			ef.Size = .15
+			ef.Color = fmcol or Color3.new()
+			ef.SecondaryColor = fscol or Color3.new()
+			part:BreakJoints()
+			function newpart()
+				local clone = part:Clone()
+				clone.Parent = mod
+				clone:BreakJoints()
+				return clone
+			end
+			local feath = newpart()
+			feath.BrickColor = feacolor
+			feath.Transparency = 0
+			Instance.new("SpecialMesh",feath).MeshType = "Sphere"
+			function newfeather()
+				local clone = feath:Clone()
+				clone.Parent = mod
+				clone:BreakJoints()
+				return clone
+			end
+			---------- RIGHT WING
+			local r1 = newpart()
+			r1.Size = Vector3.new(.3,1.5,.3)*1.2
+			local rm1 = motor(tor,r1,CFrame.new(.35,.6,.4) * CFrame.Angles(0,0,math.rad(-60)) * CFrame.Angles(math.rad(30),math.rad(-25),0),CFrame.new(0,-.8,0),.1)
+			local r2 = newpart()
+			r2.Size = Vector3.new(.4,1.8,.4)*1.2
+			local rm2 = motor(r1,r2,CFrame.new(0,.75,0) * CFrame.Angles(0,0,math.rad(50)) * CFrame.Angles(math.rad(-30),math.rad(15),0),CFrame.new(0,-.9,0),.1)
+			local r3 = newpart()
+			r3.Size = Vector3.new(.3,2.2,.3)*1.2
+			local rm3 = motor(r2,r3,CFrame.new(.1,.9,0) * CFrame.Angles(0,0,math.rad(-140)) * CFrame.Angles(math.rad(-3),0,0),CFrame.new(0,-1.1,0),.1)
+			local r4 = newpart()
+			r4.Size = Vector3.new(.25,1.2,.25)*1.2
+			local rm4 = motor(r3,r4,CFrame.new(0,1.1,0) * CFrame.Angles(0,0,math.rad(-10)) * CFrame.Angles(math.rad(-3),0,0),CFrame.new(0,-.6,0),.1)
+			local feather = newfeather()
+			feather.Mesh.Scale = Vector3.new(1,1,1)
+			feather.Size = Vector3.new(.4,3,.3)
+			weld(r4,feather,CFrame.new(-.1,-.3,0),CFrame.new(0,-1.5,0))
+			feather = newfeather()
+			feather.Mesh.Scale = Vector3.new(1,1,1)
+			feather.Size = Vector3.new(.4,2.3,.3)
+			weld(r4,feather,CFrame.new(.1,-.1,0) * CFrame.Angles(0,math.random()*.1,0),CFrame.new(0,-1.1,0))
+			feather = newfeather()
+			feather.Mesh.Scale = Vector3.new(1,1,1)
+			feather.Size = Vector3.new(.35,2.2,.25)
+			weld(r4,feather,CFrame.new(.1,-.3,0) * CFrame.Angles(0,math.random()*.1,math.rad(-10)),CFrame.new(0,-1.1,0))
+			local rf3 = {}
+			for i=0,7 do
+				feather = newfeather()
+				feather.Mesh.Scale = Vector3.new(1,1,1)
+				feather.Size = Vector3.new(.45,2.2,.35)
+				table.insert(rf3,motor(r3,feather,CFrame.new(.05,1-i*.285,0) * CFrame.Angles(0,math.random()*.1,math.rad(-25-i*2)),CFrame.new(0,-feather.Size.Y/2,0)))
+			end
+			local rf2 = {}
+			for i=0,6 do
+				feather = newfeather()
+				feather.Mesh.Scale = Vector3.new(1,1,1)
+				feather.Size = Vector3.new(.45,2.2-i*.08,.3)
+				table.insert(rf2,motor(r2,feather,CFrame.new(.05,.75-i*.26,0) * CFrame.Angles(0,math.random()*.1,math.rad(-75-i*4)),CFrame.new(0,-feather.Size.Y/2,0)))
+			end
+			local rf1 = {}
+			for i=0,6 do
+				feather = newfeather()
+				feather.Mesh.Scale = Vector3.new(1,1,1)
+				feather.Size = Vector3.new(.37,1.65-i*.06,.25)
+				table.insert(rf1,motor(r1,feather,CFrame.new(.05,.63-i*.21,0) * CFrame.Angles(0,math.random()*.05,math.rad(-75)),CFrame.new(0,-feather.Size.Y/2,0)))
+			end
+			---------- LEFT WING
+			local l1 = newpart()
+			l1.Size = Vector3.new(.3,1.5,.3)*1.2
+			local lm1 = motor(tor,l1,CFrame.new(-.35,.6,.4) * CFrame.Angles(0,0,math.rad(60)) * CFrame.Angles(math.rad(30),math.rad(25),0) * CFrame.Angles(0,-math.pi,0),CFrame.new(0,-.8,0) ,.1)
+			local l2 = newpart()
+			l2.Size = Vector3.new(.4,1.8,.4)*1.2
+			local lm2 = motor(l1,l2,CFrame.new(0,.75,0) * CFrame.Angles(0,0,math.rad(50)) * CFrame.Angles(math.rad(30),math.rad(-15),0),CFrame.new(0,-.9,0),.1)
+			local l3 = newpart()
+			l3.Size = Vector3.new(.3,2.2,.3)*1.2
+			local lm3 = motor(l2,l3,CFrame.new(.1,.9,0) * CFrame.Angles(0,0,math.rad(-140)) * CFrame.Angles(math.rad(3),0,0),CFrame.new(0,-1.1,0),.1)
+			local l4 = newpart()
+			l4.Size = Vector3.new(.25,1.2,.25)*1.2
+			local lm4 = motor(l3,l4,CFrame.new(0,1.1,0) * CFrame.Angles(0,0,math.rad(-10)) * CFrame.Angles(math.rad(3),0,0),CFrame.new(0,-.6,0),.1)
+			local feather = newfeather()
+			feather.Mesh.Scale = Vector3.new(1,1,1)
+			feather.Size = Vector3.new(.4,3,.3)
+			weld(l4,feather,CFrame.new(-.1,-.3,0),CFrame.new(0,-1.5,0))
+			feather = newfeather()
+			feather.Mesh.Scale = Vector3.new(1,1,1)
+			feather.Size = Vector3.new(.4,2.3,.3)
+			weld(l4,feather,CFrame.new(.1,-.1,0) * CFrame.Angles(0,math.random()*.1,0),CFrame.new(0,-1.1,0))
+			feather = newfeather()
+			feather.Mesh.Scale = Vector3.new(1,1,1)
+			feather.Size = Vector3.new(.35,2.2,.25)
+			weld(l4,feather,CFrame.new(.1,-.3,0) * CFrame.Angles(0,math.random()*.1,math.rad(-10)),CFrame.new(0,-1.1,0))
+			local lf3 = {}
+			for i=0,7 do
+				feather = newfeather()
+				feather.Mesh.Scale = Vector3.new(1,1,1)
+				feather.Size = Vector3.new(.45,2.2,.35)
+				table.insert(lf3,motor(l3,feather,CFrame.new(.05,1-i*.285,0) * CFrame.Angles(0,math.random()*.1,math.rad(-25-i*2)),CFrame.new(0,-feather.Size.Y/2,0)))
+			end
+			local lf2 = {}
+			for i=0,6 do
+				feather = newfeather()
+				feather.Mesh.Scale = Vector3.new(1,1,1)
+				feather.Size = Vector3.new(.45,2.2-i*.08,.3)
+				table.insert(lf2,motor(l2,feather,CFrame.new(.05,.75-i*.26,0) * CFrame.Angles(0,math.random()*.1,math.rad(-75-i*4)),CFrame.new(0,-feather.Size.Y/2,0)))
+			end
+			local lf1 = {}
+			for i=0,6 do
+				feather = newfeather()
+				feather.Mesh.Scale = Vector3.new(1,1,1)
+				feather.Size = Vector3.new(.37,1.65-i*.06,.25)
+				table.insert(lf1,motor(l1,feather,CFrame.new(.05,.63-i*.21,0) * CFrame.Angles(0,math.random()*.05,math.rad(-75)),CFrame.new(0,-feather.Size.Y/2,0)))
+			end
+			local rwing = {rm1,rm2,rm3,rm4}
+			local lwing = {lm1,lm2,lm3,lm4}
+			local oc0 = {}
+			for i,v in pairs(rwing) do
+				oc0[v] = v.C0
+			end
+			for i,v in pairs(lwing) do
+				oc0[v] = v.C0
+			end
+			function gotResized()
+				if lastsize then
+					if tor.Size == lastsize then return end -- This shouldn't happen?
+					local scaleVec = tor.Size/lastsize
+					for i,v in pairs(oc0) do
+						oc0[i] = v-v.p+scaleVec*v.p
+					end
+					lastsize = tor.Size
+				end
+				lastsize = tor.Size
+			end
+			tor.Changed:connect(function(p)
+				if p == "Size" then
+					gotResized()
+				end
+			end)
+			gotResized()
+			local idle = {0,0.5,-.2,0; .05,.05,.1,.05; -.6,-1.5,.1,0;}--0,.3,0,0
+			local outlow = {-.7,-.2,1.8,0; .3,.05,.1,.05; .2,0,0,0}
+			local outhigh = {.5,-.2,1.8,0; .3,.05,.1,.05; .2,0,0,0}
+			local veryhigh = {.9,-.3,1.9,0; .3,.05,.1,.05; .2,0,0,0}
+			local flap1 = {-.3,.3,1.1,-.2; .3,.05,.1,.05; .2,-.6,0,0}
+			local divebomb = {0,.2,.4,-.7; .3,.05,.1,.05; 0,-.5,-.6,0}
+			function setwings(tab,time)
+				time = time or 10
+				for i=1,4 do
+					rwing[i].DesiredAngle = tab[i]
+					lwing[i].DesiredAngle = tab[i]
+					rwing[i].MaxVelocity = math.abs(tab[i]-rwing[i].CurrentAngle)/time
+					lwing[i].MaxVelocity = math.abs(tab[i]-lwing[i].CurrentAngle)/time
+					local rcf = oc0[rwing[i]] * (tab[12+i] or CFrame.new())
+					local lcf = oc0[lwing[i]] * (tab[12+i] or CFrame.new())
+				end
+				for i,v in pairs(rf1) do
+					v.DesiredAngle = tab[9]
+					v.MaxVelocity = math.abs(v.DesiredAngle-v.CurrentAngle)/time
+				end
+				for i,v in pairs(lf1) do
+					v.DesiredAngle = tab[9]
+					v.MaxVelocity = math.abs(v.DesiredAngle-v.CurrentAngle)/time
+				end
+				for i,v in pairs(rf2) do
+					v.DesiredAngle = tab[10]
+					v.MaxVelocity = math.abs(v.DesiredAngle-v.CurrentAngle)/time
+				end
+				for i,v in pairs(lf2) do
+					v.DesiredAngle = tab[10]
+					v.MaxVelocity = math.abs(v.DesiredAngle-v.CurrentAngle)/time
+				end
+				for i,v in pairs(rf3) do
+					v.DesiredAngle = tab[11]
+					v.MaxVelocity = math.abs(v.DesiredAngle-v.CurrentAngle)/time
+				end
+				for i,v in pairs(lf3) do
+					v.DesiredAngle = tab[11]
+					v.MaxVelocity = math.abs(v.DesiredAngle-v.CurrentAngle)/time
+				end
+			end
+			setwings(outhigh,1)
+			flying = false
+			moving = false
+			for i,v in pairs(tor:GetChildren()) do
+				if v.ClassName:lower():match("body") then
+					v:Destroy()
+				end
+			end
+			local ctor = tor:Clone()
+			ctor:ClearAllChildren()
+			ctor.Name = "cTorso"
+			ctor.Transparency = 1
+			ctor.CanCollide = false
+			ctor.FormFactor = "Custom"
+			ctor.Size = Vector3.new(.2,.2,.2)
+			ctor.Parent = char
+			weld(tor,ctor)
+			local bg = Instance.new("BodyGyro",ctor)
+			bg.maxTorque = Vector3.new()
+			bg.P = 15000
+			bg.D = 1000
+			local bv = Instance.new("BodyVelocity",ctor)
+			bv.maxForce = Vector3.new()
+			bv.P = 15000
+			vel = Vector3.new()
+			cf = CFrame.new()
+			flspd = 0
+			keysdown = {}
+			keypressed = {}
+			ktime = {}
+			descendtimer = 0
+			jumptime = tick()
+			hum.Jumping:connect(function()
+				jumptime = tick()
+			end)
+			cam = workspace.CurrentCamera
+			kd = plr:GetMouse().KeyDown:connect(oc(function(key) 
+				keysdown[key] = true 
+				keypressed[key] = true 
+				if key == "q" then 
+					descendtimer = tick() 
+				elseif key == " " and not hum.Jump then 
+					jumptime = tick()
+				elseif (key == "a" or key == "d") and ktime[key] and tick()-ktime[key] < .3 and math.abs(reqrotx) < .3 then
+					reqrotx = key == "a" and math.pi*2 or -math.pi*2
+				end
+				ktime[key] = tick() 
+			end))
+			ku = plr:GetMouse().KeyUp:connect(function(key) 
+				keysdown[key] = false 
+				if key == " " then 
+					descendtimer = tick() 
+				end 
+			end)
+			function mid(a,b,c)
+				return math.max(a,math.min(b,c or -a))
+			end
+			function bn(a)
+				return a and 1 or 0
+			end
+			function gm(tar)
+				local m = 0
+				for i,v in pairs(tar:GetChildren()) do
+					if v:IsA("BasePart") then
+						m = m + v:GetMass()
+					end
+					m = m + gm(v)
+				end
+				return m
+			end
+			reqrotx = 0
+			local grav = 196.2
+			local con
+			con = game:GetService("RunService").Stepped:connect(oc(function()
+	--[[if not mod:IsDescendantOf(workspace) then
+	pcall(function() kd:disconnect() end)
+	pcall(function() ku:disconnect() end)
+	bg:Destroy()
+	bv:Destroy()
+	con:disconnect()
+	script:Destroy()
+	return
+	end]]
+				local obvel = tor.CFrame:vectorToObjectSpace(tor.Velocity)
+				local sspd, uspd,fspd = obvel.X,obvel.Y,obvel.Z
+				if flying then
+					local lfldir = fldir
+					fldir = cam.CoordinateFrame:vectorToWorldSpace(Vector3.new(bn(keysdown.d)-bn(keysdown.a),0,bn(keysdown.s)-bn(keysdown.w))).unit
+					local lmoving = moving
+					moving = fldir.magnitude > .1
+					if lmoving and not moving then
+						idledir = lfldir*Vector3.new(1,0,1)
+						descendtimer = tick()
+					end
+					local dbomb = fldir.Y < -.6 or (moving and keysdown["1"])
+					if moving and keysdown["0"] and lmoving then
+						fldir = (Vector3.new(lfldir.X,math.min(fldir.Y,lfldir.Y+.01)-.1,lfldir.Z)+(fldir*Vector3.new(1,0,1))*.05).unit
+					end
+					local down = tor.CFrame:vectorToWorldSpace(Vector3.new(0,-1,0))
+					local descending = (not moving and keysdown["q"] and not keysdown[" "])
+					cf = ccomplerp(cf,CFrame.new(tor.Position,tor.Position+(not moving and idledir or fldir)),keysdown["0"] and .02 or .07)
+					local gdown = not dbomb and cf.lookVector.Y < -.2 and tor.Velocity.unit.Y < .05
+					hum.PlatformStand = true
+					bg.maxTorque = Vector3.new(1,1,1)*9e5
+					local rotvel = CFrame.new(Vector3.new(),tor.Velocity):toObjectSpace(CFrame.new(Vector3.new(),fldir)).lookVector
+					bg.cframe = cf * CFrame.Angles(not moving and -.1 or -math.pi/2+.2,moving and mid(-2.5,rotvel.X/1.5) + reqrotx or 0,0)
+					reqrotx = reqrotx - reqrotx/10
+					bv.maxForce = Vector3.new(1,1,1)*9e4*.5
+					local anioff =(bn(keysdown[" "])-bn(keysdown["q"]))/2
+					local ani = tickwave(1.5-anioff,1)
+					bv.velocity = bv.velocity:Lerp(Vector3.new(0,bn(not moving)*-ani*15+(descending and math.min(20,tick()-descendtimer)*-8 or bn(keysdown[" "])-bn(keysdown["q"]))*15,0)+vel,.6) 
+					vel = moving and cf.lookVector*flspd or Vector3.new()
+					flspd = math.min(120,lerp(flspd,moving and (fldir.Y<0 and flspd+(-fldir.Y)*grav/60 or math.max(50,flspd-fldir.Y*grav/300)) or 60,.4))
+					setwings(moving and (gdown and outlow or dbomb and divebomb) or (descending and veryhigh or flap1),15)
+					for i=1,4 do
+						--CFrame.Angles(-.5+bn(i==3)*2.4+bn(i==4)*.5,.1+bn(i==2)*.5-bn(i==3)*1.1,bn(i==3)*.1)
+						rwing[i].C0 = clerp(rwing[i].C0,oc0[rwing[i]] * (gdown and CFrame.new() or dbomb and CFrame.Angles(-.5+bn(i==3)*.4+bn(i==4)*.5,.1+bn(i==2)*.5-bn(i==3)*1.1,bn(i==3)*.1) or descending and CFrame.Angles(.3,0,0) or CFrame.Angles((i*.1+1.5)*ani,ani*-.5,1*ani)),descending and .8 or .2)
+						lwing[i].C0 = clerp(lwing[i].C0,oc0[lwing[i]] * (gdown and CFrame.new() or dbomb and CFrame.Angles(-(-.5+bn(i==3)*.4+bn(i==4)*.5),-(.1+bn(i==2)*.5-bn(i==3)*1.1),bn(i==3)*.1) or descending and CFrame.Angles(-.3,0,0) or CFrame.Angles(-(i*.1+1.5)*ani,ani*.5,1*ani)),descending and .8 or .2)
+					end
+					local hit,ray = workspace:FindPartOnRayWithIgnoreList(Ray.new(tor.Position,Vector3.new(0,-3.5+math.min(0,bv.velocity.y)/30,0)),{char})
+					if hit and down.Y < -.85 and tick()-flystart > 1 then
+						flying = false
+						hum.PlatformStand = false
+						tor.Velocity = Vector3.new()
+					end
+				else
+					bg.maxTorque = Vector3.new()
+					bv.maxForce = Vector3.new()
+					local ani = tickwave(walking and .8 or 4.5,1)
+					setwings(idle,10)
+					local x,y,z = fspd/160,uspd/700,sspd/900
+					for i=1,4 do
+						rwing[i].C0 = clerp(rwing[i].C0,oc0[rwing[i]] * CFrame.Angles(ani*.1 + -mid(-.1,x),0 + -mid(-.1,y) + bn(i==2)*.6,ani*.02 + -mid(-.1,z)),.2)
+						lwing[i].C0 = clerp(lwing[i].C0,oc0[lwing[i]] * CFrame.Angles(ani*-.05 + mid(-.1,x),0 + mid(-.1,y) + -bn(i==2)*.6,ani*.02 + mid(-.1,z)),.2)
+					end
+					if keypressed[" "] and not flying and (tick()-jumptime > 0 and (tick()-jumptime < 3 or hum.Jump)) then
+						vel = Vector3.new(0,50,0)
+						bv.velocity = vel
+						idledir = cam.CoordinateFrame.lookVector*Vector3.new(1,0,1)
+						cf = tor.CFrame * CFrame.Angles(-.01,0,0)
+						tor.CFrame = cf
+						bg.cframe = cf
+						flystart = tick()
+						flying = true
+					end
+				end
+				keypressed = {}
+			end))
+		end fly()
+		--Bird Wings By Rosemarijohn2	
+	end)
+end;
+task.spawn(C_33);
 -- StarterGui.AssHurt.main.holder.guis_f.inf yield.load.LocalScript
-local function C_34()
-local script = G2L["34"];
+local function C_37()
+local script = G2L["37"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end;
-task.spawn(C_34);
+task.spawn(C_37);
 -- StarterGui.AssHurt.main.holder.guis_f.nameless admin.load.LocalScript
-local function C_37()
-local script = G2L["37"];
+local function C_3a()
+local script = G2L["3a"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
 	end)
 end;
-task.spawn(C_37);
+task.spawn(C_3a);
 -- StarterGui.AssHurt.main.holder.guis_f.wisl fe hub.load.LocalScript
-local function C_3a()
-local script = G2L["3a"];
+local function C_3d()
+local script = G2L["3d"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/wisl884/wisl-i-Universal-Project1/main/Wisl'i%20Universal%20Project.lua", true))()
 	end)
 end;
-task.spawn(C_3a);
+task.spawn(C_3d);
 -- StarterGui.AssHurt.main.holder.guis_f.wedge.load.LocalScript
-local function C_3d()
-local script = G2L["3d"];
+local function C_40()
+local script = G2L["40"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/wedge.lua"))()
 	end)
 end;
-task.spawn(C_3d);
+task.spawn(C_40);
 -- StarterGui.AssHurt.main.holder.guis_f.hyperion c00lgui.load.LocalScript
-local function C_40()
-local script = G2L["40"];
+local function C_43()
+local script = G2L["43"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/hyperion_c00lgui.lua"))()
 	end)
 end;
-task.spawn(C_40);
+task.spawn(C_43);
 -- StarterGui.AssHurt.main.holder.guis_f.terminal.load.LocalScript
-local function C_44()
-local script = G2L["44"];
+local function C_47()
+local script = G2L["47"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/stuntdevil54/luascripts/refs/heads/main/terminal.lua"))()
 	end)
 end;
-task.spawn(C_44);
+task.spawn(C_47);
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.TextBox.LineChecker
-local function C_48()
-local script = G2L["48"];
+local function C_4b()
+local script = G2L["4b"];
 	local textBox = script.Parent
 	local linesValue = script.Parent.Parent.LinesValue
 	
@@ -1765,10 +2251,10 @@ local script = G2L["48"];
 	end)
 	
 end;
-task.spawn(C_48);
+task.spawn(C_4b);
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Lines
-local function C_4d()
-local script = G2L["4d"];
+local function C_50()
+local script = G2L["50"];
 	local scrollingFrame = script.Parent
 	local frame = scrollingFrame:FindFirstChild("LinesFrame")
 	local template = frame:FindFirstChild("TextLabelTemplate")
@@ -1806,10 +2292,10 @@ local script = G2L["4d"];
 		currentLineCount = newLineCount
 	end)
 end;
-task.spawn(C_4d);
+task.spawn(C_50);
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Syntax
-local function C_50()
-local script = G2L["50"];
+local function C_53()
+local script = G2L["53"];
 	local scrollingFrame = script.Parent
 	local textBox = scrollingFrame:WaitForChild("TextBox")
 	local highlightLabel = scrollingFrame:WaitForChild("Highlighting")
@@ -1914,10 +2400,10 @@ local script = G2L["50"];
 	sync()
 	
 end;
-task.spawn(C_50);
+task.spawn(C_53);
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.Selector
-local function C_52()
-local script = G2L["52"];
+local function C_55()
+local script = G2L["55"];
 	local fastTextBox = script.Parent
 	local textBox = fastTextBox:WaitForChild("TextBox")
 	local selector = fastTextBox:WaitForChild("LineSelector")
@@ -1951,10 +2437,10 @@ local script = G2L["52"];
 	
 	updateLineSelector()
 end;
-task.spawn(C_52);
+task.spawn(C_55);
 -- StarterGui.AssHurt.main.holder.executor_f.FastTextBox.CursorScript
-local function C_54()
-local script = G2L["54"];
+local function C_57()
+local script = G2L["57"];
 	local fastTextBox = script.Parent
 	local textBox = fastTextBox:WaitForChild("TextBox")
 	local cursorFrame = fastTextBox:WaitForChild("Cursor")
@@ -1999,26 +2485,26 @@ local script = G2L["54"];
 	spawn(blink)
 	updateCursor()
 end;
-task.spawn(C_54);
+task.spawn(C_57);
 -- StarterGui.AssHurt.main.holder.executor_f.exe.LocalScript
-local function C_57()
-local script = G2L["57"];
+local function C_5a()
+local script = G2L["5a"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.FastTextBox.TextBox.Text)()
 	end)
 end;
-task.spawn(C_57);
+task.spawn(C_5a);
 -- StarterGui.AssHurt.main.holder.executor_f.cls.LocalScript
-local function C_59()
-local script = G2L["59"];
+local function C_5c()
+local script = G2L["5c"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.FastTextBox.TextBox.Text = ""
 	end)
 end;
-task.spawn(C_59);
+task.spawn(C_5c);
 -- StarterGui.AssHurt.main.holder.clogs_f.LocalScript
-local function C_5d()
-local script = G2L["5d"];
+local function C_60()
+local script = G2L["60"];
 	local Players = game:GetService("Players")
 	local function onPlayerChatted(player)
 		player.Chatted:Connect(function(message)
@@ -2037,10 +2523,10 @@ local script = G2L["5d"];
 	end)
 	
 end;
-task.spawn(C_5d);
+task.spawn(C_60);
 -- StarterGui.AssHurt.main.holder.plogs_f.LocalScript
-local function C_61()
-local script = G2L["61"];
+local function C_64()
+local script = G2L["64"];
 	local players = game:GetService("Players")
 	players.PlayerAdded:Connect(function(plr)
 		local c = script.Parent.ex:Clone()
@@ -2053,44 +2539,59 @@ local script = G2L["61"];
 		c.Parent = script.Parent
 	end)
 end;
-task.spawn(C_61);
+task.spawn(C_64);
 -- StarterGui.AssHurt.main.holder.server_f.place_id.LocalScript
-local function C_65()
-local script = G2L["65"];
+local function C_68()
+local script = G2L["68"];
 	script.Parent.Text = "Place ID | "..game.PlaceId
 end;
-task.spawn(C_65);
+task.spawn(C_68);
 -- StarterGui.AssHurt.main.holder.server_f.players.LocalScript
-local function C_67()
-local script = G2L["67"];
+local function C_6a()
+local script = G2L["6a"];
 	while true do
 		wait(0.1)
 		script.Parent.Text = "Players | "..#game:GetService("Players"):GetPlayers().."/"..game:GetService("Players").MaxPlayers
 	end
 end;
-task.spawn(C_67);
+task.spawn(C_6a);
 -- StarterGui.AssHurt.main.holder.server_f.time.LocalScript
-local function C_69()
-local script = G2L["69"];
+local function C_6c()
+local script = G2L["6c"];
 	script.Parent.Text = "Game Name | "..game.Name
 end;
-task.spawn(C_69);
+task.spawn(C_6c);
 -- StarterGui.AssHurt.main.holder.server_f.gravity.LocalScript
-local function C_6b()
-local script = G2L["6b"];
+local function C_6e()
+local script = G2L["6e"];
 	while true do
 		script.Parent.Text = " Gravity | "..game.Workspace.Gravity
 		wait(0.5)
 	end
 end;
-task.spawn(C_6b);
+task.spawn(C_6e);
+-- StarterGui.AssHurt.main.min.LocalScript
+local function C_70()
+local script = G2L["70"];
+	local open = true
+	script.Parent.MouseButton1Click:Connect(function()
+		if open == true then
+			script.Parent.Parent.holder.Visible = false
+			open = false
+		else
+			script.Parent.Parent.holder.Visible = true
+			open = true
+		end
+	end)
+end;
+task.spawn(C_70);
 -- StarterGui.AssHurt.main.close.LocalScript
-local function C_6d()
-local script = G2L["6d"];
+local function C_73()
+local script = G2L["73"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end;
-task.spawn(C_6d);
+task.spawn(C_73);
 
 return G2L["1"], require;
